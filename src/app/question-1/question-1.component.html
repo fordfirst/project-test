@@ -1,0 +1,14 @@
+<div class="row p-3">
+    <div class="col" style="width: 200px;">
+        <input type="number" class="form-control" [(ngModel)]="number" (ngModelChange)="setValueNumber()">
+    </div>
+    <div class="col">
+        <select class="form-control" [(ngModel)]="selectValue" (change)="changeSelect()">
+            <option value="isPrime">isPrime</option>
+            <option value="isFibonacci">isFibonacci</option>
+        </select>
+    </div>
+    <div class="col" style="width: 300px;">
+        {{resultValue}}
+    </div>
+</div>
